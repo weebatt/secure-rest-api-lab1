@@ -1,0 +1,99 @@
+name: Secure CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-sast:
+    name: Tests and SAST (SpotBugs)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+          verify-signature: true
+
+      - name: Run tests
+        run: ./mvnw --batch-mode --no-transfer-progress clean verify -Ddependency-check.skip=true
+
+      - name: Run SpotBugs SAST
+        run: ./mvnw --batch-mode --no-transfer-progress spotbugs:spotbugs spotbugs:check
+
+      - name: Upload SpotBugs report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: spotbugs-report
+          path: |
+            target/reports/spotbugs.html
+            target/spotbugs.xml
+            target/spotbugsXml.xml
+          if-no-files-found: warn
+
+  sca:
+    name: SCA (OWASP Dependency-Check)
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+          verify-signature: true
+
+      - name: Calculate daily cache key
+        id: cache-date
+        shell: bash
+        run: echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Restore Dependency-Check database
+        uses: actions/cache@v6
+        with:
+          path: .dependency-check-data
+          key: dependency-check-${{ runner.os }}-${{ steps.cache-date.outputs.date }}
+          restore-keys: |
+            dependency-check-${{ runner.os }}-
+
+      - name: Run OWASP Dependency-Check
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+        shell: bash
+        run: |
+          if [[ -z "${NVD_API_KEY}" ]]; then
+            echo "::error::Repository secret NVD_API_KEY is required for a complete SCA update"
+            exit 1
+          fi
+          ./mvnw --batch-mode --no-transfer-progress \
+            org.owasp:dependency-check-maven:check \
+            "-DdataDirectory=${GITHUB_WORKSPACE}/.dependency-check-data" \
+            -DnvdApiKeyEnvironmentVariable=NVD_API_KEY \
+            -DconnectionTimeout=30000 \
+            -DreadTimeout=120000
+
+      - name: Upload Dependency-Check report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: dependency-check-report
+          path: |
+            target/dependency-check-report.html
+            target/dependency-check-report.json
+          if-no-files-found: warn

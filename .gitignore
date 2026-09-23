@@ -1,0 +1,8 @@
+target/
+data/
+.idea/
+*.iml
+.DS_Store
+.dependency-check-data/
+.env
+*.log

@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: secure-rest-api
+  datasource:
+    url: jdbc:h2:file:./data/secure-api;AUTO_SERVER=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  error:
+    include-message: never
+    include-stacktrace: never
+  servlet:
+    session:
+      cookie:
+        http-only: true
+        secure: true
+        same-site: strict
+
+security:
+  jwt:
+    secret: ${JWT_SECRET}
+    expiration-minutes: 15
+    issuer: secure-rest-api
+
+app:
+  default-user:
+    username: ${APP_DEFAULT_USERNAME:student}
+    password: ${APP_DEFAULT_PASSWORD}
