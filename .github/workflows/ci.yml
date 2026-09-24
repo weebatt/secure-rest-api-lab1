@@ -84,6 +84,7 @@ jobs:
           ./mvnw --batch-mode --no-transfer-progress \
             org.owasp:dependency-check-maven:check \
             "-DdataDirectory=${GITHUB_WORKSPACE}/.dependency-check-data" \
+            -DfailBuildOnCVSS=11 \
             -DnvdApiKeyEnvironmentVariable=NVD_API_KEY \
             -DconnectionTimeout=30000 \
             -DreadTimeout=120000
