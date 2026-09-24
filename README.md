@@ -145,6 +145,8 @@ Workflow `.github/workflows/ci.yml` запускается при каждом `
 1. `Tests and SAST (SpotBugs)` — сборка, тесты, статический анализ байткода и публикация HTML/XML-отчёта.
 2. `SCA (OWASP Dependency-Check)` — поиск известных CVE в зависимостях и публикация HTML/JSON-отчёта. Проверка работает в отчётном режиме (`failBuildOnCVSS=11`): найденные записи не скрываются, но сборка не блокируется из-за CVE, относящихся к необязательным функциям или требующих обновлений, доступных только в enterprise-ветках Spring.
 
+Публичный репозиторий: [github.com/weebatt/secure-rest-api-lab1](https://github.com/weebatt/secure-rest-api-lab1). Последний успешный запуск pipeline: [Secure CI #3](https://github.com/weebatt/secure-rest-api-lab1/actions/runs/36005325041).
+
 Для SCA кэшируется локальная база Dependency-Check. Перед первым запуском в `Settings → Secrets and variables → Actions` необходимо добавить repository secret `NVD_API_KEY`, полученный на сайте NVD. Workflow намеренно завершится с понятной ошибкой, если секрет отсутствует: так неполное обновление базы нельзя ошибочно принять за успешный аудит. Сам ключ передаётся плагину через имя переменной окружения и не появляется в командной строке.
 
 Локальный запуск проверок:
@@ -157,11 +159,17 @@ Workflow `.github/workflows/ci.yml` запускается при каждом `
 
 ### Отчёты сканеров
 
-Ниже приведены снимки фактических локальных отчётов. Исходные файлы доступны в [SpotBugs HTML](report/docs/reports/spotbugs.html) и [Dependency-Check HTML](report/docs/reports/dependency-check-report.html). Для окончательной сдачи после публикации репозитория следует дополнительно сделать снимок успешных заданий в разделе GitHub Actions.
+Ниже приведены снимки фактических локальных отчётов и успешного запуска GitHub Actions. Исходные файлы доступны в [SpotBugs HTML](report/docs/reports/spotbugs.html) и [Dependency-Check HTML](report/docs/reports/dependency-check-report.html).
 
 ![Результат SpotBugs SAST](report/docs/images/sast-spotbugs.png)
 
 ![Результат OWASP Dependency-Check SCA](report/docs/images/sca-dependency-check.png)
+
+![Успешный запуск GitHub Actions](report/docs/images/github-actions-summary.jpeg)
+
+![Успешное задание SCA в GitHub Actions](report/docs/images/github-actions-sca.jpeg)
+
+![SpotBugs: 0 ошибок и предупреждений](report/docs/images/github-actions-spotbugs.jpeg)
 
 ## Контрольные вопросы
 
