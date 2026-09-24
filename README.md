@@ -169,6 +169,10 @@ Workflow `.github/workflows/ci.yml` запускается при каждом `
 
 ![Успешное задание SCA в GitHub Actions](report/docs/images/github-actions-sca.jpeg)
 
+На следующем снимке видно, что Dependency-Check отобразил найденные записи CVE, сформировал отчёты и завершил шаг с `BUILD SUCCESS` в отчётном режиме:
+
+![Dependency-Check: BUILD SUCCESS и сформированные отчёты](report/docs/images/github-actions-sca-report-success.png)
+
 ![SpotBugs: 0 ошибок и предупреждений](report/docs/images/github-actions-spotbugs.jpeg)
 
 ## Контрольные вопросы
