@@ -1,6 +1,5 @@
 package ru.itmo.secureapi.security;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.JwtException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -16,6 +15,8 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 import ru.itmo.secureapi.dto.ErrorResponse;
+import tools.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectWriter;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -27,7 +28,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtService jwtService;
     private final UserDetailsService userDetailsService;
-    private final ObjectMapper objectMapper;
+    private final ObjectWriter objectWriter;
 
     public JwtAuthenticationFilter(
             JwtService jwtService,
@@ -36,7 +37,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     ) {
         this.jwtService = jwtService;
         this.userDetailsService = userDetailsService;
-        this.objectMapper = objectMapper.copy();
+        this.objectWriter = objectMapper.writer();
     }
 
     @Override
@@ -68,7 +69,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             response.setCharacterEncoding(StandardCharsets.UTF_8.name());
             response.setContentType(MediaType.APPLICATION_JSON_VALUE);
-            objectMapper.writeValue(response.getWriter(), ErrorResponse.of(401, "Invalid or expired JWT token"));
+            objectWriter.writeValue(response.getWriter(), ErrorResponse.of(401, "Invalid or expired JWT token"));
         }
     }
 }

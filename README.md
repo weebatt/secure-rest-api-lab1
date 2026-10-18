@@ -1,18 +1,18 @@
 # Защищённый REST API на Java/Spring Boot
 
-Лабораторная работа № 1 по дисциплине «Информационная безопасность». Проект демонстрирует REST API с JWT-аутентификацией, хранением паролей в виде BCrypt-хешей, защитой от SQL-инъекций и XSS, а также автоматическими SAST/SCA-проверками в GitHub Actions.
+Лабораторная работа № 1 по дисциплине «Информационная безопасность». Проект демонстрирует REST API с JWT-аутентификацией, хранением паролей в виде BCrypt-хешей, защитой от SQL-инъекций и XSS, а также автоматическими тестами, SAST, SCA, secret scanning и DAST в GitHub Actions.
 
 ## Стек
 
-- Java 21, Spring Boot 3.5.16;
+- Java 21, Spring Boot 4.0.8, Spring Framework 7.0.9;
 - Spring Web, Spring Security, Spring Data JPA;
 - H2 в файловом режиме;
 - JJWT 0.13.0, BCrypt;
 - JUnit 5 и MockMvc;
-- SpotBugs (SAST), OWASP Dependency-Check (SCA);
+- JaCoCo, SpotBugs (SAST), OWASP Dependency-Check (SCA), Gitleaks, ZAP Baseline (DAST);
 - Maven Wrapper, GitHub Actions.
 
-Версия Log4j BOM принудительно обновлена до 2.26.1: первый SCA-прогон обнаружил CVE-2026-34477 и CVE-2026-34479 в управляемой Spring Boot версии 2.24.3, после чего зависимость была исправлена.
+Проект мигрирован с Spring Boot 3.5.16 на 4.0.8 после завершения OSS-поддержки Spring Framework 6.2. Миграция заменила Spring Framework 6.2.19 на 7.0.9, Spring Security 6.5.11 на 7.0.7, Spring Data JPA 3.5.13 на 4.0.7 и Tomcat 10.1.55 на 11.0.24. Основной JSON-стек переведён на Jackson 3.1.5; Jackson 2.21.5 остаётся только runtime-зависимостью `jjwt-jackson`. Обе версии новее уязвимого `jackson-databind 2.21.4`. Версия Log4j BOM по-прежнему зафиксирована на 2.26.1 после устранения CVE-2026-34477 и CVE-2026-34479.
 
 ## Запуск
 
@@ -140,14 +140,20 @@ curl -i -X POST http://localhost:8080/api/data \
 
 ## CI/CD и анализ безопасности
 
-Workflow `.github/workflows/ci.yml` запускается при каждом `push` и `pull_request` и содержит два независимых задания:
+Workflow `.github/workflows/ci.yml` запускается при каждом `push` и `pull_request` и содержит четыре задания:
 
-1. `Tests and SAST (SpotBugs)` — сборка, тесты, статический анализ байткода и публикация HTML/XML-отчёта.
-2. `SCA (OWASP Dependency-Check)` — поиск известных CVE в зависимостях и публикация HTML/JSON-отчёта. Проверка работает в отчётном режиме (`failBuildOnCVSS=11`): найденные записи не скрываются, но сборка не блокируется из-за CVE, относящихся к необязательным функциям или требующих обновлений, доступных только в enterprise-ветках Spring.
+1. `Secret scanning (Gitleaks)` — проверка относящегося к событию диапазона коммитов с доступом к полной истории Git; найденный секрет блокирует job.
+2. `Tests and SAST (SpotBugs)` — сборка, восемь интеграционных тестов, JaCoCo gate (не менее 70% строк), статический анализ байткода и публикация отчётов. Текущий локальный результат JaCoCo — 98,30% строк (173/176).
+3. `SCA (OWASP Dependency-Check)` — поиск известных CVE в прямых и транзитивных зависимостях и публикация HTML/JSON. `failBuildOnCVSS=7` блокирует сборку при High/Critical CVE.
+4. `DAST (ZAP baseline)` — после успешной сборки запускает проверенный JAR с одноразовыми CI-секретами и in-memory H2, затем выполняет пассивный ZAP Baseline. Отсутствие CSP, защиты от clickjacking или `X-Content-Type-Options` блокирует job; остальные пассивные предупреждения сохраняются в artifact для анализа.
+
+DAST здесь намеренно ограничен безопасным baseline-сканированием неаутентифицированной поверхности. Активный или полностью аутентифицированный scan следует добавлять отдельно при появлении OpenAPI-описания и изолированного тестового окружения: активный ZAP генерирует атакующие запросы и не должен направляться на произвольную среду.
 
 Публичный репозиторий: [github.com/weebatt/secure-rest-api-lab1](https://github.com/weebatt/secure-rest-api-lab1). Последний успешный запуск pipeline: [Secure CI #3](https://github.com/weebatt/secure-rest-api-lab1/actions/runs/36005325041).
 
 Для SCA кэшируется локальная база Dependency-Check. Перед первым запуском в `Settings → Secrets and variables → Actions` необходимо добавить repository secret `NVD_API_KEY`, полученный на сайте NVD. Workflow намеренно завершится с понятной ошибкой, если секрет отсутствует: так неполное обновление базы нельзя ошибочно принять за успешный аудит. Сам ключ передаётся плагину через имя переменной окружения и не появляется в командной строке.
+
+Файл `dependency-check-suppressions.xml` подключён, но сейчас не содержит активных правил. Допускается подавлять только подтверждённые ложные или неприменимые находки: правило должно точно указывать пакет и CVE, содержать доказательство неприменимости, владельца/задачу и обязательный срок пересмотра в атрибуте `until`. Suppression не используется вместо обновления зависимости.
 
 Локальный запуск проверок:
 
@@ -159,7 +165,9 @@ Workflow `.github/workflows/ci.yml` запускается при каждом `
 
 ### Отчёты сканеров
 
-Ниже приведены снимки фактических локальных отчётов и успешного запуска GitHub Actions. Исходные файлы доступны в [SpotBugs HTML](report/docs/reports/spotbugs.html) и [Dependency-Check HTML](report/docs/reports/dependency-check-report.html).
+Актуальные локальные файлы доступны в [SpotBugs HTML](report/docs/reports/spotbugs.html), [Dependency-Check HTML](report/docs/reports/dependency-check-report.html) и [Dependency-Check JSON](report/docs/reports/dependency-check-report.json). Перегенерированный 18.10.2026 SCA-отчёт содержит 50 зависимостей, 0 уязвимых зависимостей и 0 CVE; он построен на локальном кэше NVD от 23.09.2026. CI перед каждым контрольным запуском обновляет базу с `NVD_API_KEY`, поэтому именно его artifact является окончательным результатом.
+
+Снимки ниже сохраняют фактическое состояние pipeline **до миграции**: на них Boot 3.5.16 и временный отчётный порог `failBuildOnCVSS=11`. Они нужны как доказательство исходной находки и не описывают текущую конфигурацию.
 
 ![Результат SpotBugs SAST](report/docs/images/sast-spotbugs.png)
 
@@ -169,7 +177,7 @@ Workflow `.github/workflows/ci.yml` запускается при каждом `
 
 ![Успешное задание SCA в GitHub Actions](report/docs/images/github-actions-sca.jpeg)
 
-На следующем снимке видно, что Dependency-Check отобразил найденные записи CVE, сформировал отчёты и завершил шаг с `BUILD SUCCESS` в отчётном режиме:
+На следующем снимке видно, почему прежний зелёный статус нельзя было трактовать как отсутствие рисков: Dependency-Check отобразил CVE, но завершил шаг с `BUILD SUCCESS` из-за старого порога 11.
 
 ![Dependency-Check: BUILD SUCCESS и сформированные отчёты](report/docs/images/github-actions-sca-report-success.png)
 
@@ -202,3 +210,8 @@ JWT состоит из Base64URL-кодированных Header, Payload и Si
 - [GitHub Actions Documentation](https://docs.github.com/actions)
 - [OWASP Dependency-Check](https://dependency-check.github.io/DependencyCheck/)
 - [Apache Logging Services Security](https://logging.apache.org/security.html)
+- [Spring Framework Versions](https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions)
+- [Spring Boot 4.0 Migration Guide](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide)
+- [JaCoCo Maven Plugin](https://www.jacoco.org/jacoco/trunk/doc/maven.html)
+- [Gitleaks Action](https://github.com/gitleaks/gitleaks-action)
+- [ZAP Baseline Scan](https://github.com/zaproxy/action-baseline)
