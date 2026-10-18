@@ -9,7 +9,7 @@
     },
     "projectInfo": {
         "name": "secure-rest-api",
-"groupID":"ru.itmo","artifactID":"secure-rest-api","version":"1.0.0",        "reportDate": "2026-10-18T10:16:03.866787Z",
+"groupID":"ru.itmo","artifactID":"secure-rest-api","version":"1.0.0",        "reportDate": "2026-10-18T13:10:57.258251Z",
         "credits": {
             "NVD": "This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov",
             "CISA": "This report may contain data retrieved from the CISA Known Exploited Vulnerability Catalog: https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
@@ -29,7 +29,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -313,7 +313,7 @@
                 "secure-rest-api:runtime"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -583,7 +583,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -818,7 +818,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -1178,15 +1178,15 @@
             ]
         },{
             "isVirtual": false,
-            "fileName": "byte-buddy-1.17.8.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/net\/bytebuddy\/byte-buddy\/1.17.8\/byte-buddy-1.17.8.jar"
-,"md5": "ac7292226046cb7206b349e21affecfe",
-            "sha1": "af5735f63d00ca47a9375fae5c7471a36331c6ed",
-            "sha256": "2b5ddc8c1f4234bdb7cb45338a8e10a13e0e3ca473e91d5d821d681127ea8ba1","description": "\n        Byte Buddy is a Java library for creating Java classes at run time.\n        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.\n    ","license": "https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
+            "fileName": "byte-buddy-1.18.11.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/net\/bytebuddy\/byte-buddy\/1.18.11\/byte-buddy-1.18.11.jar"
+,"md5": "ace2c4985e84a066a281dfeb9fa0375a",
+            "sha1": "8fcc3779ff85fae5164cd1b977798ca1af388e06",
+            "sha256": "e32f454c2c1f4aca982f9ec764ed892d9a6eee7e8a77f435cbdd180f6ffdb821","description": "\n        Byte Buddy is a Java library for creating Java classes at run time.\n        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.\n    ","license": "https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
                 "secure-rest-api:runtime"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -1381,27 +1381,27 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "1.17.8"
+                        "value": "1.18.11"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Bundle-Version",
-                        "value": "1.17.8"
+                        "value": "1.18.11"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "1.17.8"
+                        "value": "1.18.11"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/net.bytebuddy\/byte-buddy@1.17.8"
+                        "id": "pkg:maven\/net.bytebuddy\/byte-buddy@1.18.11"
 ,"confidence": "HIGH"                    }
             ]
         },{
@@ -1414,7 +1414,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-validation@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-validation@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -1803,7 +1803,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -3096,15 +3096,15 @@
 
         },{
             "isVirtual": false,
-            "fileName": "hibernate-core-7.2.24.Final.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/hibernate\/orm\/hibernate-core\/7.2.24.Final\/hibernate-core-7.2.24.Final.jar"
-,"md5": "edf4d429b1ab0cee6e6ef47ab9af8e6a",
-            "sha1": "307b69b6c84bb89894b3689216b762475f034869",
-            "sha256": "eeab454080d6b5d2f4185e4eb6ddd7919f1aec4ffacd651f5ad78ce6458e8c46","description": "Hibernate's core ORM functionality","license": "Apache License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
+            "fileName": "hibernate-core-7.4.5.Final.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/hibernate\/orm\/hibernate-core\/7.4.5.Final\/hibernate-core-7.4.5.Final.jar"
+,"md5": "e9d76b3cf6a8da4666952d9293a9e132",
+            "sha1": "38682c980381214df8aa66bec69d183bf91e2926",
+            "sha256": "e894c0ae560f0031883a2f5c819e1ef1ee3e16b2cbca31e6301a004876a67dc7","description": "Hibernate's core ORM functionality","license": "Apache License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -3141,7 +3141,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "bundle-docurl",
-                            "value": "https:\/\/hibernate.org\/orm\/releases\/7.2"
+                            "value": "https:\/\/hibernate.org\/orm\/releases\/7.4"
                         }
 ,{
                             "type": "vendor",
@@ -3283,7 +3283,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "bundle-docurl",
-                            "value": "https:\/\/hibernate.org\/orm\/releases\/7.2"
+                            "value": "https:\/\/hibernate.org\/orm\/releases\/7.4"
                     }
 ,{
                             "type": "product",
@@ -3397,44 +3397,44 @@
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Bundle-Version",
-                        "value": "7.2.24.Final"
+                        "value": "7.4.5.Final"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Implementation-Version",
-                        "value": "7.2.24.Final"
+                        "value": "7.4.5.Final"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "7.2.24.Final"
+                        "value": "7.4.5.Final"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.hibernate.orm\/hibernate-core@7.2.24.Final"
+                        "id": "pkg:maven\/org.hibernate.orm\/hibernate-core@7.4.5.Final"
 ,"confidence": "HIGH"                    }
             ]                ,"vulnerabilityIds": [
                 {
-                    "id": "cpe:2.3:a:hibernate:hibernate_orm:7.2.24:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Ahibernate%3Ahibernate_orm%3A7.2.24%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:hibernate:hibernate_orm:7.4.5:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Ahibernate%3Ahibernate_orm%3A7.4.5%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
         },{
             "isVirtual": false,
-            "fileName": "hibernate-models-1.0.1.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/hibernate\/models\/hibernate-models\/1.0.1\/hibernate-models-1.0.1.jar"
-,"md5": "911e7ad11382712f0869328465937718",
-            "sha1": "3158c5f9309494b905de62c72f6f02d108aea651",
-            "sha256": "bdb42c4979001742ebc098f3b206dd1057dc93be55c50a31c3f027d3eed06412","description": "A de-typed abstraction over reflection and annotations","license": "Apache License Version 2.0: http:\/\/www.apache.org\/licenses\/"            ,"projectReferences": [
+            "fileName": "hibernate-models-1.1.1.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/hibernate\/models\/hibernate-models\/1.1.1\/hibernate-models-1.1.1.jar"
+,"md5": "bfdc23cef68eaa53fc308edb20a46264",
+            "sha1": "c890a4cc781fd8720e0e2613b4a24b33cdaa80a1",
+            "sha256": "7cb645f2ebe5fcb63e21d26259cef62d93a1ca77c400bda6992c92cb19826a89","description": "A de-typed abstraction over reflection and annotations","license": "Apache License Version 2.0: http:\/\/www.apache.org\/licenses\/"            ,"projectReferences": [
                 "secure-rest-api:runtime"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -3657,33 +3657,33 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "1.0.1"
+                        "value": "1.1.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "1.0.1"
+                        "value": "1.1.1"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.hibernate.models\/hibernate-models@1.0.1"
+                        "id": "pkg:maven\/org.hibernate.models\/hibernate-models@1.1.1"
 ,"confidence": "HIGH"                    }
             ]
         },{
             "isVirtual": false,
-            "fileName": "hibernate-validator-9.0.1.Final.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/hibernate\/validator\/hibernate-validator\/9.0.1.Final\/hibernate-validator-9.0.1.Final.jar"
-,"md5": "142bc6bcf1a014e768fa962013f3ac1d",
-            "sha1": "28c0e41ecc84d1f0b8b6d81d16e0784e63364e68",
-            "sha256": "25f40118fa4c50f8522d090d25d52d5a38953b0ccd1250835f052e7bd3164ce0","description": "Hibernate's Jakarta Validation reference implementation.","license": "Apache License 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
+            "fileName": "hibernate-validator-9.1.3.Final.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/hibernate\/validator\/hibernate-validator\/9.1.3.Final\/hibernate-validator-9.1.3.Final.jar"
+,"md5": "eaa0b111a913af3b2e91e7b7e6871eff",
+            "sha1": "1873374b24290d273160e998cb57bfe0f0a5d584",
+            "sha256": "0497ebbe23fafe4180b74bd0b96a67eee8556552decc4d3c120c1dc737a2b5fb","description": "Hibernate's Jakarta Validation reference implementation.","license": "Apache License 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-validation@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-validation@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -3727,7 +3727,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-jdk-spec",
-                            "value": "21"
+                            "value": "25"
                         }
 ,{
                             "type": "vendor",
@@ -3988,7 +3988,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-jdk-spec",
-                            "value": "21"
+                            "value": "25"
                     }
 ,{
                             "type": "product",
@@ -4221,35 +4221,35 @@
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Bundle-Version",
-                        "value": "9.0.1.Final"
+                        "value": "9.1.3.Final"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Implementation-Version",
-                        "value": "9.0.1.Final"
+                        "value": "9.1.3.Final"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "9.0.1.Final"
+                        "value": "9.1.3.Final"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.hibernate.validator\/hibernate-validator@9.0.1.Final"
+                        "id": "pkg:maven\/org.hibernate.validator\/hibernate-validator@9.1.3.Final"
 ,"confidence": "HIGH"                    }
             ]                ,"vulnerabilityIds": [
                 {
-                    "id": "cpe:2.3:a:hibernate:hibernate-validator:9.0.1:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Ahibernate%3Ahibernate-validator%3A9.0.1%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:hibernate:hibernate-validator:9.1.3:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Ahibernate%3Ahibernate-validator%3A9.1.3%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
 ,                {
-                    "id": "cpe:2.3:a:redhat:hibernate_validator:9.0.1:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aredhat%3Ahibernate_validator%3A9.0.1%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:redhat:hibernate_validator:9.1.3:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aredhat%3Ahibernate_validator%3A9.1.3%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
         },{
             "isVirtual": false,
@@ -4261,7 +4261,7 @@
                 "secure-rest-api:runtime"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -5134,7 +5134,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -5835,7 +5835,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -6126,7 +6126,7 @@
                 "secure-rest-api:runtime"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -6466,7 +6466,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -6785,7 +6785,7 @@
                 "secure-rest-api:runtime"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -7202,7 +7202,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -7507,7 +7507,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -7882,7 +7882,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-validation@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-validation@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -8313,7 +8313,7 @@
                 "secure-rest-api:runtime"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -8555,7 +8555,7 @@
                 "secure-rest-api:runtime"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -8846,7 +8846,7 @@
                 "secure-rest-api:runtime"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -9151,7 +9151,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-validation@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-validation@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -10287,7 +10287,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -10624,7 +10624,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -10866,7 +10866,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.1.1" }
             ]
             ,"relatedDependencies": [
   {
@@ -11211,7 +11211,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.1.1" }
             ]
             ,"relatedDependencies": [
   {
@@ -11513,15 +11513,15 @@
             ]
         },{
             "isVirtual": false,
-            "fileName": "micrometer-commons-1.16.7.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/io\/micrometer\/micrometer-commons\/1.16.7\/micrometer-commons-1.16.7.jar"
-,"md5": "952b8470311050de186bed6c354dadea",
-            "sha1": "ed85a2983e52358be84a6c8c3522b968ff41e500",
-            "sha256": "cd1ad64a94650a2ed3988a4ab48c9a7fad40c4986a81e328194dd757b5170273","description": "Module containing common code","license": "The Apache Software License, Version 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
+            "fileName": "micrometer-commons-1.17.1.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/io\/micrometer\/micrometer-commons\/1.17.1\/micrometer-commons-1.17.1.jar"
+,"md5": "aa9291ad211473834d3d48453ae05ea1",
+            "sha1": "b1c3fdea68c5a81495cf1c16cf2905c5ad9f30d2",
+            "sha256": "f2cee6ef046e72eec8128474c7f58c6217173b45ae373c30de0289f2a56ab0fd","description": "Module containing common code","license": "The Apache Software License, Version 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.security\/spring-security-test@7.0.7" }
+                { "reference":"pkg:maven\/org.springframework.security\/spring-security-test@7.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -11565,21 +11565,21 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "branch",
-                            "value": "release\/1.16.7"
+                            "value": "release\/1.17.1"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-date",
-                            "value": "2026-08-17_07:25:36"
+                            "value": "2026-08-17_07:25:39"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-date-utc",
-                            "value": "2026-08-17T07:25:36.552419142Z"
+                            "value": "2026-08-17T07:25:39.516694470Z"
                         }
 ,{
                             "type": "vendor",
@@ -11600,7 +11600,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-number",
-                            "value": "49"
+                            "value": "50"
                         }
 ,{
                             "type": "vendor",
@@ -11614,7 +11614,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-url",
-                            "value": "https:\/\/github.com\/micrometer-metrics\/micrometer-commercial\/actions\/runs\/32005689840"
+                            "value": "https:\/\/github.com\/micrometer-metrics\/micrometer-commercial\/actions\/runs\/32005692132"
                         }
 ,{
                             "type": "vendor",
@@ -11642,14 +11642,14 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "change",
-                            "value": "2109514"
+                            "value": "f1b1924"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "full-change",
-                            "value": "21095149cbb82b914bd9c0688a1622a4a3220f85"
+                            "value": "f1b1924bc8821adbc841df69eb433c933e17e1a5"
                         }
 ,{
                             "type": "vendor",
@@ -11791,21 +11791,21 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "branch",
-                            "value": "release\/1.16.7"
+                            "value": "release\/1.17.1"
                     }
 ,{
                             "type": "product",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-date",
-                            "value": "2026-08-17_07:25:36"
+                            "value": "2026-08-17_07:25:39"
                     }
 ,{
                             "type": "product",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-date-utc",
-                            "value": "2026-08-17T07:25:36.552419142Z"
+                            "value": "2026-08-17T07:25:39.516694470Z"
                     }
 ,{
                             "type": "product",
@@ -11826,7 +11826,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-number",
-                            "value": "49"
+                            "value": "50"
                     }
 ,{
                             "type": "product",
@@ -11840,7 +11840,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-url",
-                            "value": "https:\/\/github.com\/micrometer-metrics\/micrometer-commercial\/actions\/runs\/32005689840"
+                            "value": "https:\/\/github.com\/micrometer-metrics\/micrometer-commercial\/actions\/runs\/32005692132"
                     }
 ,{
                             "type": "product",
@@ -11875,21 +11875,21 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "change",
-                            "value": "2109514"
+                            "value": "f1b1924"
                     }
 ,{
                             "type": "product",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "full-change",
-                            "value": "21095149cbb82b914bd9c0688a1622a4a3220f85"
+                            "value": "f1b1924bc8821adbc841df69eb433c933e17e1a5"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGH",
                             "source": "Manifest",
                             "name": "Implementation-Title",
-                            "value": "io.micrometer#micrometer-commons;1.16.7"
+                            "value": "io.micrometer#micrometer-commons;1.17.1"
                     }
 ,{
                             "type": "product",
@@ -11989,47 +11989,47 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "1.16.7"
+                        "value": "1.17.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Bundle-Version",
-                        "value": "1.16.7"
+                        "value": "1.17.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Implementation-Version",
-                        "value": "1.16.7"
+                        "value": "1.17.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "1.16.7"
+                        "value": "1.17.1"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/io.micrometer\/micrometer-commons@1.16.7"
+                        "id": "pkg:maven\/io.micrometer\/micrometer-commons@1.17.1"
 ,"confidence": "HIGH"                    }
             ]
         },{
             "isVirtual": false,
-            "fileName": "micrometer-observation-1.16.7.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/io\/micrometer\/micrometer-observation\/1.16.7\/micrometer-observation-1.16.7.jar"
-,"md5": "ff4722ca94dde41f70801dbdf5f77c9b",
-            "sha1": "5387e97e74b61892affb7c4b4cafa9df6d6ca6d2",
-            "sha256": "74f9e4d51ef30c141de8a2409879282e572eef98665e033e8922c2fbee16862d","description": "Module containing Observation related code","license": "The Apache Software License, Version 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
+            "fileName": "micrometer-observation-1.17.1.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/io\/micrometer\/micrometer-observation\/1.17.1\/micrometer-observation-1.17.1.jar"
+,"md5": "f63baf5840fb4446b9313a3bd8773da1",
+            "sha1": "24c0b05bc06a9ab6f4e09a48949b6eccc179ca15",
+            "sha256": "eb34f0cd84a879393ae5c21160fc06385ccdc74f36a4d1e31b199f59acfdaf71","description": "Module containing Observation related code","license": "The Apache Software License, Version 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.security\/spring-security-test@7.0.7" }
+                { "reference":"pkg:maven\/org.springframework.security\/spring-security-test@7.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -12073,21 +12073,21 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "branch",
-                            "value": "release\/1.16.7"
+                            "value": "release\/1.17.1"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-date",
-                            "value": "2026-08-17_07:25:36"
+                            "value": "2026-08-17_07:25:39"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-date-utc",
-                            "value": "2026-08-17T07:25:36.994453332Z"
+                            "value": "2026-08-17T07:25:39.958346319Z"
                         }
 ,{
                             "type": "vendor",
@@ -12108,7 +12108,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-number",
-                            "value": "49"
+                            "value": "50"
                         }
 ,{
                             "type": "vendor",
@@ -12122,7 +12122,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-url",
-                            "value": "https:\/\/github.com\/micrometer-metrics\/micrometer-commercial\/actions\/runs\/32005689840"
+                            "value": "https:\/\/github.com\/micrometer-metrics\/micrometer-commercial\/actions\/runs\/32005692132"
                         }
 ,{
                             "type": "vendor",
@@ -12150,14 +12150,14 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "change",
-                            "value": "2109514"
+                            "value": "f1b1924"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "full-change",
-                            "value": "21095149cbb82b914bd9c0688a1622a4a3220f85"
+                            "value": "f1b1924bc8821adbc841df69eb433c933e17e1a5"
                         }
 ,{
                             "type": "vendor",
@@ -12299,21 +12299,21 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "branch",
-                            "value": "release\/1.16.7"
+                            "value": "release\/1.17.1"
                     }
 ,{
                             "type": "product",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-date",
-                            "value": "2026-08-17_07:25:36"
+                            "value": "2026-08-17_07:25:39"
                     }
 ,{
                             "type": "product",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-date-utc",
-                            "value": "2026-08-17T07:25:36.994453332Z"
+                            "value": "2026-08-17T07:25:39.958346319Z"
                     }
 ,{
                             "type": "product",
@@ -12334,7 +12334,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-number",
-                            "value": "49"
+                            "value": "50"
                     }
 ,{
                             "type": "product",
@@ -12348,7 +12348,7 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "build-url",
-                            "value": "https:\/\/github.com\/micrometer-metrics\/micrometer-commercial\/actions\/runs\/32005689840"
+                            "value": "https:\/\/github.com\/micrometer-metrics\/micrometer-commercial\/actions\/runs\/32005692132"
                     }
 ,{
                             "type": "product",
@@ -12383,21 +12383,21 @@
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "change",
-                            "value": "2109514"
+                            "value": "f1b1924"
                     }
 ,{
                             "type": "product",
                             "confidence": "LOW",
                             "source": "Manifest",
                             "name": "full-change",
-                            "value": "21095149cbb82b914bd9c0688a1622a4a3220f85"
+                            "value": "f1b1924bc8821adbc841df69eb433c933e17e1a5"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGH",
                             "source": "Manifest",
                             "name": "Implementation-Title",
-                            "value": "io.micrometer#micrometer-observation;1.16.7"
+                            "value": "io.micrometer#micrometer-observation;1.17.1"
                     }
 ,{
                             "type": "product",
@@ -12497,34 +12497,34 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "1.16.7"
+                        "value": "1.17.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Bundle-Version",
-                        "value": "1.16.7"
+                        "value": "1.17.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Implementation-Version",
-                        "value": "1.16.7"
+                        "value": "1.17.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "1.16.7"
+                        "value": "1.17.1"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/io.micrometer\/micrometer-observation@1.16.7"
+                        "id": "pkg:maven\/io.micrometer\/micrometer-observation@1.17.1"
 ,"confidence": "HIGH"                    }
             ]
         },{
@@ -12537,7 +12537,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -12757,15 +12757,15 @@
             ]
         },{
             "isVirtual": false,
-            "fileName": "snakeyaml-2.5.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/yaml\/snakeyaml\/2.5\/snakeyaml-2.5.jar"
-,"md5": "8d3b7581db5c7620db55183f33a4f2ad",
-            "sha1": "2d53ddec134280cb384c1e35d094e5f71c1f2316",
-            "sha256": "e6682acf1ace77508ef13649cbf4f8d09d2cf5457bdb61d25ffb6ac0233d78dd","description": "YAML 1.1 parser and emitter for Java","license": "Apache License, Version 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
+            "fileName": "snakeyaml-2.6.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/yaml\/snakeyaml\/2.6\/snakeyaml-2.6.jar"
+,"md5": "d8bd94536cee962cfff39730bffdb8da",
+            "sha1": "2bc14918a2f8d5414749ab12d0c590cd3198b8c1",
+            "sha256": "c8f7a98e7394adda02f6317249710e4d1b4c7a25aa8c7eace0c2eea52eb8bf85","description": "YAML 1.1 parser and emitter for Java","license": "Apache License, Version 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -13058,37 +13058,37 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "2.5"
+                        "value": "2.6"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "2.5"
+                        "value": "2.6"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.yaml\/snakeyaml@2.5"
+                        "id": "pkg:maven\/org.yaml\/snakeyaml@2.6"
 ,"confidence": "HIGH"                    }
             ]                ,"vulnerabilityIds": [
                 {
-                    "id": "cpe:2.3:a:snakeyaml_project:snakeyaml:2.5:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Asnakeyaml_project%3Asnakeyaml%3A2.5%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:snakeyaml_project:snakeyaml:2.6:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Asnakeyaml_project%3Asnakeyaml%3A2.6%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
         },{
             "isVirtual": false,
-            "fileName": "spring-boot-sql-4.0.8.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-sql\/4.0.8\/spring-boot-sql-4.0.8.jar"
-,"md5": "1fb0bab14beab977671f8eccc9f351e8",
-            "sha1": "1c5baa4f9d02a39d6d1912c85b50afa5dddca13d",
-            "sha256": "cd88bfdcb52b5aa5b4124c65909cd57c2b414a8a2776c4c087dd75b7427a8e0c","description": "Spring Boot SQL","license": "Apache License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0"            ,"projectReferences": [
+            "fileName": "spring-boot-sql-4.1.1.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-sql\/4.1.1\/spring-boot-sql-4.1.1.jar"
+,"md5": "a02307143da95b67153d63c287797568",
+            "sha1": "1699846d0a6959d415f06ee76371d48e968d0d3e",
+            "sha256": "fa4f6ddded1bb3bbc496897686336d8433e34f1f22daa886872be2aa184def23","description": "Spring Boot SQL","license": "Apache License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0"            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -13360,384 +13360,384 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "4.0.8"
+                        "value": "4.1.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Implementation-Version",
-                        "value": "4.0.8"
+                        "value": "4.1.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "4.0.8"
+                        "value": "4.1.1"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.springframework.boot\/spring-boot-sql@4.0.8"
+                        "id": "pkg:maven\/org.springframework.boot\/spring-boot-sql@4.1.1"
 ,"confidence": "HIGH"                    }
             ]                ,"vulnerabilityIds": [
                 {
-                    "id": "cpe:2.3:a:vmware:spring_boot:4.0.8:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Avmware%3Aspring_boot%3A4.0.8%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:vmware:spring_boot:4.1.1:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Avmware%3Aspring_boot%3A4.1.1%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
 ,                {
-                    "id": "cpe:2.3:a:www-sql_project:www-sql:4.0.8:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Awww-sql_project%3Awww-sql%3A4.0.8%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:www-sql_project:www-sql:4.1.1:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Awww-sql_project%3Awww-sql%3A4.1.1%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
         },{
             "isVirtual": false,
-            "fileName": "spring-boot-web-server-4.0.8.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-web-server\/4.0.8\/spring-boot-web-server-4.0.8.jar"
-,"md5": "bd0e6a61c437ab324802a5e0ee8f69a0",
-            "sha1": "f36c87d4a1d46b39ae956baa312cc777cb23856e",
-            "sha256": "634e37eb6e53cc9d30e54bb8e3969faec289a0cf222e4929446d2af38e6fb6ce","description": "Spring Boot Web Server","license": "Apache License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0"            ,"projectReferences": [
+            "fileName": "spring-boot-web-server-4.1.1.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-web-server\/4.1.1\/spring-boot-web-server-4.1.1.jar"
+,"md5": "a060efd710429298574e5f7615e4f6df",
+            "sha1": "d1eb8e523013ac3939ae59adc5335a3de704d11b",
+            "sha256": "6912fb1fdf7f657a61ac050760fa835fb1e7496399291697e2901f82887a4fee","description": "Spring Boot Web Server","license": "Apache License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0"            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc-test@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc-test@4.1.1" }
             ]
             ,"relatedDependencies": [
   {
                     "isVirtual": false,
-                    "fileName": "spring-boot-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot\/4.0.8\/spring-boot-4.0.8.jar"
-,"sha256": "ef1a4917ff5dfd41de20b7441a7830eaeae0a01229998c3aa2f471b96bc2b38f",
-                    "sha1": "77dbf5a493af4f18687f9f58242b570a6842cca7",
-                    "md5": "a14372d4bfc2a285035faccd8b20c56d",
+                    "fileName": "spring-boot-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot\/4.1.1\/spring-boot-4.1.1.jar"
+,"sha256": "0d92b532b1d4020640e72d78c31af175c23db8e0ddd45b81855b7fdf4c9c70f0",
+                    "sha1": "f958dfcba9bc998459cd7862894aa69220645c44",
+                    "md5": "81b5253239da3bbee07178a6c28bd9d4",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-autoconfigure-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-autoconfigure\/4.0.8\/spring-boot-autoconfigure-4.0.8.jar"
-,"sha256": "6beeb105cceae1df37957d35e1bf8d060e7bde61537569decae3f976f6b54919",
-                    "sha1": "249e870e1d13e51c4e800e477e5d940a99d9ca75",
-                    "md5": "1e1bb8fdf12a80f3144c570dd43530c9",
+                    "fileName": "spring-boot-autoconfigure-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-autoconfigure\/4.1.1\/spring-boot-autoconfigure-4.1.1.jar"
+,"sha256": "59228756ddd76cea050f95d86deff334789bc53b6688beaa673b1af2b9794592",
+                    "sha1": "53c1c604301b4183faa480a5b9f2fd86a2f043c3",
+                    "md5": "bdae3903f86e1ce179fc0da467594b14",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-data-commons-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-data-commons\/4.0.8\/spring-boot-data-commons-4.0.8.jar"
-,"sha256": "9483590dff8763005fe472ffd7e994c1ecaa22b67b7dd4395b59ad66b69f05e4",
-                    "sha1": "0e28d34f9f488d10273d9fcfc347b1a4ac8f3b29",
-                    "md5": "ea4d477b9c14978022aa38a4d801bbd8",
+                    "fileName": "spring-boot-data-commons-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-data-commons\/4.1.1\/spring-boot-data-commons-4.1.1.jar"
+,"sha256": "e9911b99825ea5650827ec1e2d2fc1890c7e63b6f048c1f4dba2c8e85ff6d354",
+                    "sha1": "90a5dd56b22c624c8d7eedda11c57f6bc737dc72",
+                    "md5": "9fbe07cb08c16bbab205a545048d84ed",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-data-commons@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-data-commons@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-data-jpa-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-data-jpa\/4.0.8\/spring-boot-data-jpa-4.0.8.jar"
-,"sha256": "da74efb47b438b16150bcbdd2d55b9be724fd481c39f72f9225066ba5c196f62",
-                    "sha1": "8f7052e5d34f8b434029d812ef110c2e9e329895",
-                    "md5": "7b215b7441a191bdddd350ccb73a5597",
+                    "fileName": "spring-boot-data-jpa-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-data-jpa\/4.1.1\/spring-boot-data-jpa-4.1.1.jar"
+,"sha256": "19860139ccffcdeb27ea5a6c96bc2977bbc586f0aa2e5bb64eca49602e9de95c",
+                    "sha1": "6bb039309f539b4f9b14e7398eafcca08a60fd23",
+                    "md5": "37d401f9e5ffe38ddeddd3e5f79b9153",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-data-jpa@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-data-jpa@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-hibernate-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-hibernate\/4.0.8\/spring-boot-hibernate-4.0.8.jar"
-,"sha256": "be48950b8888c924f5e256c75f4cab822d12699044986feabb861621dbdb8f4a",
-                    "sha1": "5204d7d05f108c7f93e3676c518fcb652ce84685",
-                    "md5": "95e7d1d1e3026ca4d28bffd17fcf8a50",
+                    "fileName": "spring-boot-hibernate-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-hibernate\/4.1.1\/spring-boot-hibernate-4.1.1.jar"
+,"sha256": "8ad72a7fea79102390661779157a5064ac9e61c395dccc01c0696debf3c69859",
+                    "sha1": "79c857acd2f8716f53ee68f371d708372547e04a",
+                    "md5": "2970939e86a60da0d49f7229791bd640",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-hibernate@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-hibernate@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-http-converter-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-http-converter\/4.0.8\/spring-boot-http-converter-4.0.8.jar"
-,"sha256": "ea94cd0d84162603266b7ab97f8a4de5661ad0425d0d8a50c50a18f4610dc0be",
-                    "sha1": "587c55757cc44d6646f232253d8f70de83460454",
-                    "md5": "125c2318a080bfd55b56b247400ccdd5",
+                    "fileName": "spring-boot-http-converter-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-http-converter\/4.1.1\/spring-boot-http-converter-4.1.1.jar"
+,"sha256": "52a167430a918c223b2ccd2eb62aff91a8e43e6daebe5a07caa37b9a04c61cb9",
+                    "sha1": "886e76307151a64c8710c61e02a2323ab883b87c",
+                    "md5": "dca1f4468f453cd12fd3497d5ad7ed22",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-http-converter@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-http-converter@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-jackson-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-jackson\/4.0.8\/spring-boot-jackson-4.0.8.jar"
-,"sha256": "f846da1dc1f78acd3e9446b19d049f0a3a5bd79dac7eb2cff921b256f9dc4b01",
-                    "sha1": "d98bb27112c24655e6b6b0a5dd3db75a1b4796e6",
-                    "md5": "3ed2271db222f0023a417988fa73323d",
+                    "fileName": "spring-boot-jackson-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-jackson\/4.1.1\/spring-boot-jackson-4.1.1.jar"
+,"sha256": "69a9b4d8850a0532a5e44ff7306a03621485b26596e7f9481de7d28e68a2dd42",
+                    "sha1": "1defff7e3f9dda050f26e98da3285b4321920dc1",
+                    "md5": "25cf1458df4244b5d1e583ceffab5f2e",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-jackson@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-jackson@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-jdbc-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-jdbc\/4.0.8\/spring-boot-jdbc-4.0.8.jar"
-,"sha256": "794570e0962830d4d6ea356ec9dbbfee595afbb8cdf3a95eb7d331e900401f80",
-                    "sha1": "5ea7d98ebfd5490d9d61c806f3e78f5e3da397d3",
-                    "md5": "0b8e2cfc0ff0eafb81bbcfd1eac089fb",
+                    "fileName": "spring-boot-jdbc-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-jdbc\/4.1.1\/spring-boot-jdbc-4.1.1.jar"
+,"sha256": "30de56a06ccedb40245fd3a69a5107c7b3c0500447bb982a54a3b5da2859ae2c",
+                    "sha1": "dde73b8622725ac440d5f3e88c2d41194085564a",
+                    "md5": "17937300bb9d3dab608922ed020d5b6e",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-jdbc@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-jdbc@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-jpa-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-jpa\/4.0.8\/spring-boot-jpa-4.0.8.jar"
-,"sha256": "0fe3774176535ef44b47e6e5c7ecfd842923ea4f040c0bed3717a791d65315a2",
-                    "sha1": "72b19893fb97942ea666e13399fbd333d74300b9",
-                    "md5": "07a0ae323bd2349ae9d6ac9aa0335c19",
+                    "fileName": "spring-boot-jpa-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-jpa\/4.1.1\/spring-boot-jpa-4.1.1.jar"
+,"sha256": "ccefec84e31f99938543031511215ea16d9a06984be010702ca5c5960c3a2c1f",
+                    "sha1": "bff6408ab9a9083e608320ceeeec4462cb31be78",
+                    "md5": "e94b882e67766cd2093e0beb67ed5b90",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-jpa@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-jpa@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-persistence-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-persistence\/4.0.8\/spring-boot-persistence-4.0.8.jar"
-,"sha256": "663b2018a8820bee73cc99314a7a7e64275706e615c4274efb80f90207098263",
-                    "sha1": "9d9362071081d1a9c23541e6cafc7108b9d57a94",
-                    "md5": "5b967d678712381490d19461d13b6fa6",
+                    "fileName": "spring-boot-persistence-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-persistence\/4.1.1\/spring-boot-persistence-4.1.1.jar"
+,"sha256": "0f78d2556ac3ed75f9eaf3134a1fba94ad1ec3414b52aa279c1f690217e71e3c",
+                    "sha1": "34e6dd1adfbce5de427957588683d607865c76c7",
+                    "md5": "d58fbb1b08995a4593e2e23312cac016",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-persistence@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-persistence@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-security-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-security\/4.0.8\/spring-boot-security-4.0.8.jar"
-,"sha256": "7a52b309ac7a604e9c2aefd4389773ba8cacd3d0a01989b55d3a45576654e48a",
-                    "sha1": "e9e9bae2c4e588efcd98f54c43385b8a212f57c8",
-                    "md5": "096fed45a53730217906ecd4763b923b",
+                    "fileName": "spring-boot-security-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-security\/4.1.1\/spring-boot-security-4.1.1.jar"
+,"sha256": "c940697be9bc67820d5011b86d58105836b7cae7c8fb5d4e61d635b51b392cbe",
+                    "sha1": "8f08145264d1a224c4b9c865d60e47f62f4dd85f",
+                    "md5": "f32cab4e9825bc63d15fd6c5e4cd6f1d",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-security@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-security@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-servlet-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-servlet\/4.0.8\/spring-boot-servlet-4.0.8.jar"
-,"sha256": "c632f7a95fb68edd0803ed9b40c0e93591ee572cc755fd78ca4c9a039369661b",
-                    "sha1": "58a061daf1467c37cbae09149221009ca3f4b187",
-                    "md5": "58a6edeaf41a0d581a25925992877f29",
+                    "fileName": "spring-boot-servlet-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-servlet\/4.1.1\/spring-boot-servlet-4.1.1.jar"
+,"sha256": "4dcb156e311a4c1ad5f1ed7eabd94a78ea74510b05c429a4fcfdcf8beb9d5882",
+                    "sha1": "76881b573c8639708ce3d520b428209335f007fc",
+                    "md5": "d496b25e22cd17f4f89e6a54a1f9b6f7",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-servlet@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-servlet@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-starter-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter\/4.0.8\/spring-boot-starter-4.0.8.jar"
-,"sha256": "f910a1b87c6c39097f5125d96c019135e8dc3bee0322c20f9271e0777aa70ee1",
-                    "sha1": "79413291d453a1e093b835b3a4f766bbd90ceb09",
-                    "md5": "e77735a95ca144b393f7b5d9cb1db00c",
+                    "fileName": "spring-boot-starter-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter\/4.1.1\/spring-boot-starter-4.1.1.jar"
+,"sha256": "de5b2dd28400eda20914fd4a6054d0c201e68d2e4de35a25a4d89f054ccc2e63",
+                    "sha1": "50fe6a89fa4fd26e7caaec909ab1c4cc9afde5d4",
+                    "md5": "5d5008acc9638eca189bbcd581e164b3",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-starter-data-jpa-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-data-jpa\/4.0.8\/spring-boot-starter-data-jpa-4.0.8.jar"
-,"sha256": "5c69fb90bb27c62d61efdb9527a4acaf91be1f530559bcf182e0a90ff0dd7863",
-                    "sha1": "06b21df1b3cd98b2b552d05526ebdd6af409c857",
-                    "md5": "8975f67490f8173457a270fd1a365e5b",
+                    "fileName": "spring-boot-starter-data-jpa-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-data-jpa\/4.1.1\/spring-boot-starter-data-jpa-4.1.1.jar"
+,"sha256": "88eb7c8a4d1af4333f40e9c8d53835fd306600ae8a078d633b673f491fcba79a",
+                    "sha1": "e76828cd073e4eb1ae72fbcd07bf32c76baa76f6",
+                    "md5": "3fee409de13036b8697a08d94cca97dc",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-starter-jackson-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-jackson\/4.0.8\/spring-boot-starter-jackson-4.0.8.jar"
-,"sha256": "440f0eba9127e876473b165140139e52ec658f5ca5a2d4fada4382d618148894",
-                    "sha1": "9afb1a670229e3c1c00bbae6482cb66505a9c176",
-                    "md5": "984b565388774b32c5726ef13691c792",
+                    "fileName": "spring-boot-starter-jackson-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-jackson\/4.1.1\/spring-boot-starter-jackson-4.1.1.jar"
+,"sha256": "d30e594a3e0f3a090438fc22000a87ab577a3b80c674180a10544ca331207f24",
+                    "sha1": "f8cd6a81994a207a808564515e5104548d1967bb",
+                    "md5": "5dad3d4002b15cc88586263d4224a82e",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-jackson@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-jackson@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-starter-jdbc-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-jdbc\/4.0.8\/spring-boot-starter-jdbc-4.0.8.jar"
-,"sha256": "8417bd40a516dd2bd2bb450b84dfc16cacb708a4282901146104ff5cef957590",
-                    "sha1": "94e83c6ee8c9380f3d8402002eb494c2ed4d172b",
-                    "md5": "9817aee6ee1215354992ef86c324bd41",
+                    "fileName": "spring-boot-starter-jdbc-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-jdbc\/4.1.1\/spring-boot-starter-jdbc-4.1.1.jar"
+,"sha256": "c51b28a3793168bff837eea90b1ae641efc3a28d6cdb980dd2b0b230914e93ee",
+                    "sha1": "6159a34f1463c146ad1d0b4f6532a61a9fc9f5b5",
+                    "md5": "980dc64337952483e2ec4047c9c2f566",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-starter-logging-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-logging\/4.0.8\/spring-boot-starter-logging-4.0.8.jar"
-,"sha256": "6c1f7cd8e38ac0dfbc92979c1b2eb8df5b11b026299d763c8864c8a473ef76d8",
-                    "sha1": "58a2ca52478d6304adfb8058cd893f9b51523f8a",
-                    "md5": "611d42572dfc7b35cedb773c635dbb12",
+                    "fileName": "spring-boot-starter-logging-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-logging\/4.1.1\/spring-boot-starter-logging-4.1.1.jar"
+,"sha256": "8eca7d72c8434f5c3b935385c656cd5337f473434bdbcb4913b3b3a34897d178",
+                    "sha1": "c6831fe833182419def54db4c41fc34ce71f4fc5",
+                    "md5": "d7cf74c5bba2267508f0bfafd374c367",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-starter-security-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-security\/4.0.8\/spring-boot-starter-security-4.0.8.jar"
-,"sha256": "eced7ea931a6229b09645b4fe8a9a939e67b2f45f190c17dbde6d14ad30e7451",
-                    "sha1": "216f0344b92bf3acd9762516b5f08a7d7e976bba",
-                    "md5": "40d1e1128c32132740815f4d4544e9e6",
+                    "fileName": "spring-boot-starter-security-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-security\/4.1.1\/spring-boot-starter-security-4.1.1.jar"
+,"sha256": "38628875b75cbed6ba4642f3b0a4baf4735bd4f82b49450e4ae5a5e4d1b7b4a9",
+                    "sha1": "6c8b67269e28642ac532a85fec1ea159847ab602",
+                    "md5": "1d540ab506986647dc85fca9b6230f24",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-security@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-security@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-starter-tomcat-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-tomcat\/4.0.8\/spring-boot-starter-tomcat-4.0.8.jar"
-,"sha256": "9948ef03e61c044d9f2f5676d2e521c130386a4a74d1a134a645ebe053a82f2d",
-                    "sha1": "b7652c24b6c77997ace5864cedd418c015bc7994",
-                    "md5": "be38b1c2cbe6ec96075d8e8d9141c453",
+                    "fileName": "spring-boot-starter-tomcat-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-tomcat\/4.1.1\/spring-boot-starter-tomcat-4.1.1.jar"
+,"sha256": "f224d8504be3b413825ee85ef549a7b1598ee8512e062c6bd5ddce1043cd388a",
+                    "sha1": "8a7b2b2fd2ec40ed7e56359fb68c9a8b5fde315c",
+                    "md5": "da4fd524d53460ee9872627f37d82955",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-starter-tomcat-runtime-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-tomcat-runtime\/4.0.8\/spring-boot-starter-tomcat-runtime-4.0.8.jar"
-,"sha256": "6bdd09547e4577a8e702f4ce305bd72e93cd502cd3e133fcc5bdd25463ceb62c",
-                    "sha1": "1710c1b3a489cb2b4b2712dad615412feeac12e7",
-                    "md5": "db2aaa9fc92d31c9a86033423442d6e0",
+                    "fileName": "spring-boot-starter-tomcat-runtime-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-tomcat-runtime\/4.1.1\/spring-boot-starter-tomcat-runtime-4.1.1.jar"
+,"sha256": "580f0d9a9d02a1a6e387640e422af42f9dbdf302836d562ec595fdb2b31a1c29",
+                    "sha1": "0397ae80a471fa432ef858230c7d52498ee20ecd",
+                    "md5": "8bf74fd310649fcc3fadd2ae63ef33e7",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat-runtime@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat-runtime@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-starter-validation-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-validation\/4.0.8\/spring-boot-starter-validation-4.0.8.jar"
-,"sha256": "9b06ec0bd640ba9d2bc8d034e514f3d5078670fb4232430f9271181f71d152c7",
-                    "sha1": "75ff3999e993c31a6d566ee6b1b17749944f54b5",
-                    "md5": "6ed5d6bb9914b88fef832653c9f18a9c",
+                    "fileName": "spring-boot-starter-validation-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-validation\/4.1.1\/spring-boot-starter-validation-4.1.1.jar"
+,"sha256": "f86edd0ba377e67f1549359d936756e727d23944b4399d7682462b6717d0ded6",
+                    "sha1": "2c08283aef7b9b22b8d0892bca1c54660383b574",
+                    "md5": "ab8c3b3b60c181b256570142bd70fe6a",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-validation@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-validation@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-starter-webmvc-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-webmvc\/4.0.8\/spring-boot-starter-webmvc-4.0.8.jar"
-,"sha256": "30e6b265f5f697d7403e0f978a89425ad26513543f7df89246cf2a9b3d8a17eb",
-                    "sha1": "fa5bac7d5d9f560cbae7fabc4a197ad0349fe4da",
-                    "md5": "eb23254458e73a530b0b62fc2bd5fcd4",
+                    "fileName": "spring-boot-starter-webmvc-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-starter-webmvc\/4.1.1\/spring-boot-starter-webmvc-4.1.1.jar"
+,"sha256": "4aec3edbdf6317fefe23db1b989d8bba143a45a51c1fc32346146ecebf67d625",
+                    "sha1": "7d25a0b22f776c7cc0cc18a88188113400b2b011",
+                    "md5": "e728f7d6e9e844dc5f76c024307d767c",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-webmvc@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-starter-webmvc@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-tomcat-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-tomcat\/4.0.8\/spring-boot-tomcat-4.0.8.jar"
-,"sha256": "2c704a61e44768d6b5101b2ac0ae0b87399a30abb96712d9fb746b506efcee1e",
-                    "sha1": "1446ca86427d693833b7afdc1b5b94711992be15",
-                    "md5": "12ad6bfd8d95ee2cf65a3fb8300caa68",
+                    "fileName": "spring-boot-tomcat-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-tomcat\/4.1.1\/spring-boot-tomcat-4.1.1.jar"
+,"sha256": "17f65629e4eb3c979c0572b69b57d630bb12e64869e9d7520adddaa6734256b6",
+                    "sha1": "61450290ced8f16d8d00308f1aa81423d7660dc2",
+                    "md5": "f6af30cb7f976f9ffb40870d546dfe97",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-tomcat@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-tomcat@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-transaction-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-transaction\/4.0.8\/spring-boot-transaction-4.0.8.jar"
-,"sha256": "cf86b197ceb6f352ec32c8a1374520c2361c8b2c08ec0dca2753480d097dcfc6",
-                    "sha1": "4e47fb913c3957ee46a93df575c57e2ca1dc9cd8",
-                    "md5": "be8111289467a5496c9699894d93a3f9",
+                    "fileName": "spring-boot-transaction-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-transaction\/4.1.1\/spring-boot-transaction-4.1.1.jar"
+,"sha256": "e7f2fad4fe65bf6aaf1b1a538a68a1cf69988adb558f4a0fc0992a8be4fddf64",
+                    "sha1": "efb4297a46ffad58e3047604c5f4cdc07440c554",
+                    "md5": "4c989df1942060928c72ca4ce81f26a0",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-transaction@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-transaction@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-validation-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-validation\/4.0.8\/spring-boot-validation-4.0.8.jar"
-,"sha256": "25b357a3d7cc84cc6ebb14b38ae28cfd27a3e1468fb5d0891b87f6bb30494a52",
-                    "sha1": "832f436284021dc3690dd173549d805062592130",
-                    "md5": "e4271e861eae2068d3bfa1f855cf0fc0",
+                    "fileName": "spring-boot-validation-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-validation\/4.1.1\/spring-boot-validation-4.1.1.jar"
+,"sha256": "c2546a81b6b7a39f51d889c99047f24567e4b28d1717fb53a65e9327cfc436f1",
+                    "sha1": "e4a77e095430ec3b9f4c2382c1521fd07750d0f6",
+                    "md5": "a56cdfe1952eaa0f717a21efa65caace",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-validation@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-validation@4.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-boot-webmvc-4.0.8.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-webmvc\/4.0.8\/spring-boot-webmvc-4.0.8.jar"
-,"sha256": "92052c430ea18f39f34c4f05feaebb108ee1a145263f46bbc3b3506fed598b81",
-                    "sha1": "4f362463ccf5b6e8893d5ce515f07e3df0bc84bf",
-                    "md5": "6faa8d125c3d0f772042808332ff7973",
+                    "fileName": "spring-boot-webmvc-4.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/boot\/spring-boot-webmvc\/4.1.1\/spring-boot-webmvc-4.1.1.jar"
+,"sha256": "9f08c1fb938c45a8693fec5f3065be3aca203948a7ab4d56b06444986f75a6b2",
+                    "sha1": "3057d155bc66412ad906ecdd488e0fd617589151",
+                    "md5": "c2ab42be73e47c4389f6605ede5f24b2",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.boot/spring-boot-webmvc@4.0.8"
+                                "id": "pkg:maven/org.springframework.boot/spring-boot-webmvc@4.1.1"
                             }
                     ]
                 }
@@ -14026,32 +14026,32 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "4.0.8"
+                        "value": "4.1.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Implementation-Version",
-                        "value": "4.0.8"
+                        "value": "4.1.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "4.0.8"
+                        "value": "4.1.1"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.springframework.boot\/spring-boot-web-server@4.0.8"
+                        "id": "pkg:maven\/org.springframework.boot\/spring-boot-web-server@4.1.1"
 ,"confidence": "HIGH"                    }
             ]                ,"vulnerabilityIds": [
                 {
-                    "id": "cpe:2.3:a:vmware:spring_boot:4.0.8:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Avmware%3Aspring_boot%3A4.0.8%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:vmware:spring_boot:4.1.1:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Avmware%3Aspring_boot%3A4.1.1%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
         },{
             "isVirtual": false,
@@ -14063,7 +14063,7 @@
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-test@4.1.1" }
             ]
             ,"relatedDependencies": [
   {
@@ -14509,15 +14509,15 @@
             ]
         },{
             "isVirtual": false,
-            "fileName": "spring-data-commons-4.0.7.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/data\/spring-data-commons\/4.0.7\/spring-data-commons-4.0.7.jar"
-,"md5": "1c8cb1364e7da1b73aca84219fb9cc37",
-            "sha1": "76e5c082ff5303ca165892046e62f9d6dfe327e8",
-            "sha256": "422ff04ec9981e148043b698b68210c3abb74b83abd876f4999dab54dedc01af","description": "Core Spring concepts underpinning every Spring Data module."            ,"projectReferences": [
+            "fileName": "spring-data-commons-4.1.1.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/data\/spring-data-commons\/4.1.1\/spring-data-commons-4.1.1.jar"
+,"md5": "be65904570c726889f5d331986781c7c",
+            "sha1": "8b6450be618ed20a5f9a0065de23a5b9abb37808",
+            "sha256": "cf2a3f9bfabefca1a8c2c0f0a65c393d9ff83b0cb1cf7b705accac18a6ed0ee4","description": "Core Spring concepts underpinning every Spring Data module."            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -14733,40 +14733,40 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "4.0.7"
+                        "value": "4.1.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Implementation-Version",
-                        "value": "4.0.7"
+                        "value": "4.1.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "4.0.7"
+                        "value": "4.1.1"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.springframework.data\/spring-data-commons@4.0.7"
+                        "id": "pkg:maven\/org.springframework.data\/spring-data-commons@4.1.1"
 ,"confidence": "HIGH"                    }
             ]
         },{
             "isVirtual": false,
-            "fileName": "spring-data-jpa-4.0.7.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/4.0.7\/spring-data-jpa-4.0.7.jar"
-,"md5": "b2e1a77585eb6d064237625bd52b3f2e",
-            "sha1": "209c5c83a55718e49e81684c4c80ded7f6f0ed57",
-            "sha256": "699e2c31fe30d94800470a3886d36d663f74e46a1b0f912b11584764027734c7","description": "Spring Data module for JPA repositories."            ,"projectReferences": [
+            "fileName": "spring-data-jpa-4.1.1.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/4.1.1\/spring-data-jpa-4.1.1.jar"
+,"md5": "6faadd3e65f12672924d2bf909a15bd0",
+            "sha1": "44e75d6aaa629c40e03277eddacb2ed5ddd10955",
+            "sha256": "e90191b8d9f1c5a9398db0587460f1f4002e0fe4ff267321ed3a107f7fec46e1","description": "Spring Data module for JPA repositories."            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -14968,82 +14968,82 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "4.0.7"
+                        "value": "4.1.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Implementation-Version",
-                        "value": "4.0.7"
+                        "value": "4.1.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "4.0.7"
+                        "value": "4.1.1"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.springframework.data\/spring-data-jpa@4.0.7"
+                        "id": "pkg:maven\/org.springframework.data\/spring-data-jpa@4.1.1"
 ,"confidence": "HIGH"                    }
             ]                ,"vulnerabilityIds": [
                 {
-                    "id": "cpe:2.3:a:pivotal_software:spring_data_jpa:4.0.7:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Apivotal_software%3Aspring_data_jpa%3A4.0.7%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:pivotal_software:spring_data_jpa:4.1.1:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Apivotal_software%3Aspring_data_jpa%3A4.1.1%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
         },{
             "isVirtual": false,
-            "fileName": "spring-security-core-7.0.7.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/7.0.7\/spring-security-core-7.0.7.jar"
-,"md5": "1e9b2e53fc052f32fe0a7d00a7116b98",
-            "sha1": "82f3843fc4ddddfb08be5899be5c2e66e62faa05",
-            "sha256": "e1f9eacc6a91fadc2d63155ccb8896c19cc945239ac126f2556fffe15effe596","description": "Spring Security","license": "Apache License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0"            ,"projectReferences": [
+            "fileName": "spring-security-core-7.1.1.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/7.1.1\/spring-security-core-7.1.1.jar"
+,"md5": "e9c072aeb1ab83fb92dd5a0bc556a857",
+            "sha1": "c0373b564151af7a3001ccfbea589bf37dd6dc3b",
+            "sha256": "98a5011baa78df36fb184e6ce0e8e086ca9a64fcdd8f161c0a96475a3a0907bd","description": "Spring Security","license": "Apache License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0"            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.security\/spring-security-test@7.0.7" }
+                { "reference":"pkg:maven\/org.springframework.security\/spring-security-test@7.1.1" }
             ]
             ,"relatedDependencies": [
   {
                     "isVirtual": false,
-                    "fileName": "spring-security-config-7.0.7.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/security\/spring-security-config\/7.0.7\/spring-security-config-7.0.7.jar"
-,"sha256": "a601134be90447b371c0679a21fc0c797f9a2e8d05ca8f821020a7d952985464",
-                    "sha1": "11b21c715fb9dcdc7b81017113a6a2c4179d2d82",
-                    "md5": "5df583f7a6c8de8be1a6a5a2e093f67f",
+                    "fileName": "spring-security-config-7.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/security\/spring-security-config\/7.1.1\/spring-security-config-7.1.1.jar"
+,"sha256": "1f947c853f14cab76563464ee22e72f6672f3913db52647d2f5d1df5f2b1e5a5",
+                    "sha1": "06aadefb4acc552578b28f0b95908158861bea08",
+                    "md5": "08ebfc196ab56b26cd5d36ebb5497f70",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.security/spring-security-config@7.0.7"
+                                "id": "pkg:maven/org.springframework.security/spring-security-config@7.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-security-crypto-7.0.7.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/security\/spring-security-crypto\/7.0.7\/spring-security-crypto-7.0.7.jar"
-,"sha256": "e03b7570b6bac4a7d4837542e9317bc65158cfc96485564a29e7bb6747f218aa",
-                    "sha1": "c42c051f015af3c58a4efafa03522df43df92053",
-                    "md5": "bdcd2631b37a8c8675e8480ec7620ccb",
+                    "fileName": "spring-security-crypto-7.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/security\/spring-security-crypto\/7.1.1\/spring-security-crypto-7.1.1.jar"
+,"sha256": "6e8bb2337faccabd30626f917ed1d2bfa9dde982229b6b373b644d1a01635403",
+                    "sha1": "5356e8056e4dcb18b12550c422fb12e0c8e742ae",
+                    "md5": "cd2777efdf4d91dd0b264f608af574ef",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.security/spring-security-crypto@7.0.7"
+                                "id": "pkg:maven/org.springframework.security/spring-security-crypto@7.1.1"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "spring-security-web-7.0.7.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/7.0.7\/spring-security-web-7.0.7.jar"
-,"sha256": "b9935b0ab3ddbf4df963b2c7fa8fc98245687398ef3e22253c26e1d53db75388",
-                    "sha1": "7b40d76f6467a42f8a8965b689685dbeb6bb4650",
-                    "md5": "4f56a9015a715193fa49f8ae4e826221",
+                    "fileName": "spring-security-web-7.1.1.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/7.1.1\/spring-security-web-7.1.1.jar"
+,"sha256": "dece134a2332c976a2c94ecf13f816c64e8ea7f2139795485afe655fba0408f3",
+                    "sha1": "449685cf2be4029b1200f1d0860a15caa5c2d05b",
+                    "md5": "cc76d1f39558ef5eeaee80997caac280",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.springframework.security/spring-security-web@7.0.7"
+                                "id": "pkg:maven/org.springframework.security/spring-security-web@7.1.1"
                             }
                     ]
                 }
@@ -15304,40 +15304,40 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "7.0.7"
+                        "value": "7.1.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Implementation-Version",
-                        "value": "7.0.7"
+                        "value": "7.1.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "7.0.7"
+                        "value": "7.1.1"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.springframework.security\/spring-security-core@7.0.7"
+                        "id": "pkg:maven\/org.springframework.security\/spring-security-core@7.1.1"
 ,"confidence": "HIGH"                    }
             ]                ,"vulnerabilityIds": [
                 {
-                    "id": "cpe:2.3:a:pivotal_software:spring_security:7.0.7:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Apivotal_software%3Aspring_security%3A7.0.7%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:pivotal_software:spring_security:7.1.1:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Apivotal_software%3Aspring_security%3A7.1.1%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
 ,                {
-                    "id": "cpe:2.3:a:vmware:spring_security:7.0.7:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Avmware%3Aspring_security%3A7.0.7%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:vmware:spring_security:7.1.1:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Avmware%3Aspring_security%3A7.1.1%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
         },{
             "isVirtual": false,
-            "fileName": "spring-security-web-7.0.7.jar: spring-security-webauthn.js",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/7.0.7\/spring-security-web-7.0.7.jar\/org\/springframework\/security\/spring-security-webauthn.js"
+            "fileName": "spring-security-web-7.1.1.jar: spring-security-webauthn.js",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/7.1.1\/spring-security-web-7.1.1.jar\/org\/springframework\/security\/spring-security-webauthn.js"
 ,"md5": "d8d90d854a23d021c2e758b3eebce213",
             "sha1": "7814ccd3adc2388f52b2658bf5fc30b457949ab6",
             "sha256": "044a2b8d7e995bff815565678631a2d3a5cc0aa96ef8ac35cfacb579307f77a9"            ,"projectReferences": [
@@ -15354,27 +15354,27 @@
 
         },{
             "isVirtual": false,
-            "fileName": "tomcat-embed-core-11.0.24.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-core\/11.0.24\/tomcat-embed-core-11.0.24.jar"
-,"md5": "87410cbfa90c782419859efb70e1fd91",
-            "sha1": "0172bb449cba1a8ffcffa249727907602a4cc899",
-            "sha256": "e7b966dcaac8c5ffa4f10e44031ebf5b71f2123560c08ac8b7120028615aea08","description": "Core Tomcat implementation","license": "Apache License, Version 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
+            "fileName": "tomcat-embed-core-11.0.27.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-core\/11.0.27\/tomcat-embed-core-11.0.27.jar"
+,"md5": "b09b9d7fab37407966200c29e4c79468",
+            "sha1": "30cc98777f843d290bbca645f15c54864cc64491",
+            "sha256": "b71785ff101c0df501064b3e3b8c4a02e4f9cc3047a7fa686c41fc4edc2f0cb4","description": "Core Tomcat implementation","license": "Apache License, Version 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-webmvc@4.1.1" }
             ]
             ,"relatedDependencies": [
   {
                     "isVirtual": false,
-                    "fileName": "tomcat-embed-websocket-11.0.24.jar",
-                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-websocket\/11.0.24\/tomcat-embed-websocket-11.0.24.jar"
-,"sha256": "825160101f0da4a10e19b5730c2ae2f99f8c2c7a7211ac05562726c5e97ab91e",
-                    "sha1": "8cd43556888f042c90115d54b124a4648f2b413f",
-                    "md5": "4276fc81c04ef0458c5111a0726ad22b",
+                    "fileName": "tomcat-embed-websocket-11.0.27.jar",
+                    "filePath": "\/Users\/macbook\/.m2\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-websocket\/11.0.27\/tomcat-embed-websocket-11.0.27.jar"
+,"sha256": "cbcd7ed6d7428fa71af6572d541a3ef74ceff42dfc523273950fe586062dc60f",
+                    "sha1": "f94e1b5ad075e0a8d47aa8fe9c9d8d842eb1d67e",
+                    "md5": "c9044a8121b29fb8f57a95ce2111c006",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@11.0.24"
+                                "id": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@11.0.27"
                             }
                     ]
                 }
@@ -15803,54 +15803,54 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "11.0.24"
+                        "value": "11.0.27"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Bundle-Version",
-                        "value": "11.0.24"
+                        "value": "11.0.27"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Implementation-Version",
-                        "value": "11.0.24"
+                        "value": "11.0.27"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "11.0.24"
+                        "value": "11.0.27"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.apache.tomcat.embed\/tomcat-embed-core@11.0.24"
+                        "id": "pkg:maven\/org.apache.tomcat.embed\/tomcat-embed-core@11.0.27"
 ,"confidence": "HIGH"                    }
             ]                ,"vulnerabilityIds": [
                 {
-                    "id": "cpe:2.3:a:apache:tomcat:11.0.24:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aapache%3Atomcat%3A11.0.24%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:apache:tomcat:11.0.27:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aapache%3Atomcat%3A11.0.27%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
 ,                {
-                    "id": "cpe:2.3:a:apache_tomcat:apache_tomcat:11.0.24:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aapache_tomcat%3Aapache_tomcat%3A11.0.24%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:apache_tomcat:apache_tomcat:11.0.27:*:*:*:*:*:*:*"
+,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aapache_tomcat%3Aapache_tomcat%3A11.0.27%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
         },{
             "isVirtual": false,
-            "fileName": "tomcat-embed-el-11.0.24.jar",
-            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-el\/11.0.24\/tomcat-embed-el-11.0.24.jar"
-,"md5": "cb6b040782afb670264116a994b0bcae",
-            "sha1": "3eafa072a45e67081452e56576ab4fe68b525fb5",
-            "sha256": "ad0546f12dace008aacce18ba13222137760b310ca719e173d3e13021b9af6c6","description": "Core Tomcat implementation","license": "Apache License, Version 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
+            "fileName": "tomcat-embed-el-11.0.27.jar",
+            "filePath": "\/Users\/macbook\/.m2\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-el\/11.0.27\/tomcat-embed-el-11.0.27.jar"
+,"md5": "1a07f087e16d573763aeeb73789dd598",
+            "sha1": "349ae4673953057dc8d0f51f17e5cf7088cca660",
+            "sha256": "206d6c6b1b6ce67b1c9af9ed0f6f43b4dbbc26164dd47bb49b9aad1583191f33","description": "Core Tomcat implementation","license": "Apache License, Version 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"projectReferences": [
                 "secure-rest-api:compile"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-validation@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-validation@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [
@@ -16066,34 +16066,34 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "11.0.24"
+                        "value": "11.0.27"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Bundle-Version",
-                        "value": "11.0.24"
+                        "value": "11.0.27"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGH",
                         "source": "Manifest",
                         "name": "Implementation-Version",
-                        "value": "11.0.24"
+                        "value": "11.0.27"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "11.0.24"
+                        "value": "11.0.27"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.apache.tomcat.embed\/tomcat-embed-el@11.0.24"
+                        "id": "pkg:maven\/org.apache.tomcat.embed\/tomcat-embed-el@11.0.27"
 ,"confidence": "HIGH"                    }
             ]
         },{
@@ -16106,7 +16106,7 @@
                 "secure-rest-api:runtime"
             ]
             ,"includedBy": [
-                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.0.8" }
+                { "reference":"pkg:maven\/org.springframework.boot\/spring-boot-starter-data-jpa@4.1.1" }
             ]
             ,"evidenceCollected": {
                 "vendorEvidence": [

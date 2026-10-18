@@ -4,7 +4,7 @@
 
 ## Стек
 
-- Java 21, Spring Boot 4.0.8, Spring Framework 7.0.9;
+- Java 21, Spring Boot 4.1.1, Spring Framework 7.0.9;
 - Spring Web, Spring Security, Spring Data JPA;
 - H2 в файловом режиме;
 - JJWT 0.13.0, BCrypt;
@@ -12,7 +12,7 @@
 - JaCoCo, SpotBugs (SAST), OWASP Dependency-Check (SCA), Gitleaks, ZAP Baseline (DAST);
 - Maven Wrapper, GitHub Actions.
 
-Проект мигрирован с Spring Boot 3.5.16 на 4.0.8 после завершения OSS-поддержки Spring Framework 6.2. Миграция заменила Spring Framework 6.2.19 на 7.0.9, Spring Security 6.5.11 на 7.0.7, Spring Data JPA 3.5.13 на 4.0.7 и Tomcat 10.1.55 на 11.0.24. Основной JSON-стек переведён на Jackson 3.1.5; Jackson 2.21.5 остаётся только runtime-зависимостью `jjwt-jackson`. Обе версии новее уязвимого `jackson-databind 2.21.4`. Версия Log4j BOM по-прежнему зафиксирована на 2.26.1 после устранения CVE-2026-34477 и CVE-2026-34479.
+Проект мигрирован с Spring Boot 3.5.16 на 4.1.1 после завершения OSS-поддержки Spring Framework 6.2. Миграция заменила Spring Framework 6.2.19 на 7.0.9, Spring Security 6.5.11 на 7.1.1 и Spring Data JPA 3.5.13 на 4.1.1. Boot 4.1.1 по умолчанию управляет Tomcat 11.0.24, который свежий CI-скан определил как уязвимый, поэтому свойство `tomcat.version` отдельно зафиксировано на 11.0.27. Основной JSON-стек переведён на Jackson 3.1.5; Jackson 2.21.5 остаётся только runtime-зависимостью `jjwt-jackson`. Обе версии новее уязвимого `jackson-databind 2.21.4`. Версия Log4j BOM по-прежнему зафиксирована на 2.26.1 после устранения CVE-2026-34477 и CVE-2026-34479.
 
 ## Запуск
 
@@ -165,7 +165,7 @@ DAST здесь намеренно ограничен безопасным basel
 
 ### Отчёты сканеров
 
-Актуальные локальные файлы доступны в [SpotBugs HTML](report/docs/reports/spotbugs.html), [Dependency-Check HTML](report/docs/reports/dependency-check-report.html) и [Dependency-Check JSON](report/docs/reports/dependency-check-report.json). Перегенерированный 18.10.2026 SCA-отчёт содержит 50 зависимостей, 0 уязвимых зависимостей и 0 CVE; он построен на локальном кэше NVD от 23.09.2026. CI перед каждым контрольным запуском обновляет базу с `NVD_API_KEY`, поэтому именно его artifact является окончательным результатом.
+Актуальные локальные файлы доступны в [SpotBugs HTML](report/docs/reports/spotbugs.html), [Dependency-Check HTML](report/docs/reports/dependency-check-report.html) и [Dependency-Check JSON](report/docs/reports/dependency-check-report.json). Первый локальный отчёт после перехода на Boot 4.0.8 ошибочно показал 0 CVE, поскольку использовал кэш NVD от 23.09.2026. Свежий CI затем корректно заблокировал сборку: в `tomcat-embed-core 11.0.24` обнаружено 11 CVE, из них 9 имели CVSS не ниже 7. После перехода на Boot 4.1.1 и отдельного обновления Tomcat до 11.0.27 локальные HTML/JSON перегенерированы: 50 зависимостей, 0 уязвимых зависимостей и 0 CVE. Этот результат всё ещё основан на локальном кэше; окончательным подтверждением считается CI-artifact после обновления базы с `NVD_API_KEY`.
 
 Снимки ниже сохраняют фактическое состояние pipeline **до миграции**: на них Boot 3.5.16 и временный отчётный порог `failBuildOnCVSS=11`. Они нужны как доказательство исходной находки и не описывают текущую конфигурацию.
 
