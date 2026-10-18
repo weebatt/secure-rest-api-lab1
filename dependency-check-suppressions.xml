@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+    <!--
+      Add only a confirmed false positive or a demonstrably non-reachable CVE.
+      Every rule must contain: the exact package/CVE selector, evidence in <notes>,
+      an owner or tracking issue, and a mandatory review deadline in `until`.
+
+      Example (do not copy without an applicability review):
+      <suppress until="2027-01-31Z">
+          <notes><![CDATA[
+          Reason: vulnerable feature is not present or reachable in this application.
+          Evidence: link to the analysis and tests.
+          Owner: team/security; tracking issue: SEC-000.
+          ]]></notes>
+          <packageUrl regex="true">^pkg:maven/example/group/artifact@.*$</packageUrl>
+          <cve>CVE-YYYY-NNNNN</cve>
+      </suppress>
+    -->
+</suppressions>

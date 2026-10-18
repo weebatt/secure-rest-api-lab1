@@ -1,0 +1,5 @@
+# ZAP baseline policy. Unlisted passive alerts remain informational in CI (-I).
+# These response-hardening controls are build-blocking for the unauthenticated surface.
+10020	FAIL	(Anti-clickjacking header)
+10021	FAIL	(X-Content-Type-Options header)
+10038	FAIL	(Content Security Policy header)
